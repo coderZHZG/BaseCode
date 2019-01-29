@@ -15,6 +15,7 @@ public class BaseController {
 
     @RequestMapping(value = "/index")
     public String index(ModelMap map){
+
         return "index";
     }
 }
