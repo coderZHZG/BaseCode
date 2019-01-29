@@ -15,7 +15,7 @@ public class BaseController {
 
     @RequestMapping(value = "/index")
     public String index(ModelMap map){
-        //返回index---
+        //返回index
         return "index";
     }
 }
