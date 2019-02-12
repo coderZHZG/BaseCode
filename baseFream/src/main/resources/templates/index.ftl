@@ -39,7 +39,7 @@
 </tr>
 </#list>
 </table>
-<h1>总人数：${count}</h1>
+<h1>查询到的总人数：${count}</h1>
 <#--<img style="width: 120px;height: 120px;" src="../image/1.jpg">-->
 </body>
 </html>
