@@ -15,7 +15,7 @@ public class LoginController {
 
     @RequestMapping(value = "/login")
     public String count(ModelMap map){
-        System.out.println("1234");
+        System.out.println("12345");
         return "login";
     }
 
