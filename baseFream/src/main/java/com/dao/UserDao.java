@@ -1,7 +1,9 @@
 package com.dao;
 
-import com.entity.User;
+import com.entity.UserInfo;
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
 import java.util.Map;
@@ -13,10 +15,12 @@ import java.util.Map;
  * @date 2017-10-03 09:45:11
  */
 @Mapper
-public interface UserDao {
+public interface UserDao extends JpaRepository<UserInfo,Long> {
 
-	int count(Map<String, Object> map);
+	/**通过username查找用户信息;*/
+	UserInfo findByUsername(String username);
 
-	List<User> list(Map<String, Object> map);
+	UserInfo findByUserCode(String userCode);
 
+	UserInfo findById(Integer id);
 }

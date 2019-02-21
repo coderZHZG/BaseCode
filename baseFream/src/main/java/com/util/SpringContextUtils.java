@@ -1,5 +1,5 @@
 
-package com.Util;
+package com.util;
 
 import org.apache.commons.lang3.Validate;
 import org.springframework.beans.BeansException;

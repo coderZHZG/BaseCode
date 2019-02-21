@@ -1,6 +1,7 @@
 
-package com.Util;
+package com.util;
 
+import com.activiti.utils.CustomProcessDiagramGenerator;
 import org.activiti.bpmn.model.BpmnModel;
 import org.activiti.bpmn.model.FlowNode;
 import org.activiti.bpmn.model.SequenceFlow;

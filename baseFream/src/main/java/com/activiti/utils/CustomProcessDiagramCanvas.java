@@ -1,5 +1,5 @@
 
-package com.Util;
+package com.activiti.utils;
 /* Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -71,7 +71,7 @@ public class CustomProcessDiagramCanvas {
 	protected static Color			CONNECTION_COLOR				= new Color(88, 88, 88);
 	protected static Color			CONDITIONAL_INDICATOR_COLOR		= new Color(255, 255, 255);
 	// protected static Color HIGHLIGHT_COLOR = Color.RED;
-	protected static Color			HIGHLIGHT_COLOR					= Color.GREEN;
+	protected static Color			HIGHLIGHT_COLOR					= Color.GREEN;//这里可以改变线条颜色
 	protected static Color			LABEL_COLOR						= new Color(112, 146, 190);
 	protected static Color			TASK_BORDER_COLOR				= new Color(187, 187, 187);
 	protected static Color			EVENT_BORDER_COLOR				= new Color(88, 88, 88);

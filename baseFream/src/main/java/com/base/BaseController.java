@@ -1,21 +1,23 @@
 package com.base;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.RequestMapping;
+import com.util.ShiroUtils;
+import com.entity.UserInfo;
 
 /**
  * Created by zhangzhiguo on 2018/12/4.
  */
 
-
-@Controller
-@RequestMapping(value = "/baseController")
 public class BaseController {
-
-    @RequestMapping(value = "/index")
-    public String index(ModelMap map){
-        //返回index
-        return "index";
+    public UserInfo getUser() {
+        return ShiroUtils.getUser();
     }
+
+    public Integer getUserId() {
+        return ShiroUtils.getUserId();
+    }
+
+    public String getUsername() {
+        return getUser().getUsername();
+    }
+
 }

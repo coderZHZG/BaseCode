@@ -1,11 +1,8 @@
 package com.activiti.controller;
 
-import com.Util.ActUtils;
+import com.util.ActUtils;
 import com.activiti.service.ActivityService;
 import com.activiti.vo.TaskVo;
-import com.entity.User;
-import com.service.UserService;
-import org.activiti.engine.task.Task;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
