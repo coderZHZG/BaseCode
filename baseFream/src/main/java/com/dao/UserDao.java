@@ -1,5 +1,6 @@
 package com.dao;
 
+import com.base.BaseDao;
 import com.entity.UserInfo;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.data.domain.Page;
@@ -18,14 +19,10 @@ import java.util.Map;
  * @date 2017-10-03 09:45:11
  */
 @Mapper
-public interface UserDao extends JpaRepository<UserInfo,Long> {
-
-	Page<UserInfo> findAll(Pageable pageable);
+public interface UserDao extends BaseDao<UserInfo> {
 
 	/**通过username查找用户信息;*/
 	UserInfo findByUsername(String username);
 
 	UserInfo findByUserCode(String userCode);
-
-	UserInfo findById(Integer id);
 }
