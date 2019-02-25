@@ -2,6 +2,9 @@ package com.dao;
 
 import com.entity.UserInfo;
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.CrudRepository;
 
@@ -16,6 +19,8 @@ import java.util.Map;
  */
 @Mapper
 public interface UserDao extends JpaRepository<UserInfo,Long> {
+
+	Page<UserInfo> findAll(Pageable pageable);
 
 	/**通过username查找用户信息;*/
 	UserInfo findByUsername(String username);

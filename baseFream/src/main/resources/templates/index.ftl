@@ -364,10 +364,12 @@
 								<ul>
 									<#list menu.children as me>
 									<li>
-										<a href="${me.attributes.url}">${me.text}</a>
+										<#if (me.attributes.url)?? && (me.text)??>
+										   <a href="${me.attributes.url}">${me.text}</a>
+										</#if>
 									</li>
 									</#list>
-								</ul>
+!								</ul>
 							</#if>
 						</li>
 					</#list>
@@ -978,6 +980,8 @@
 		<!-- SmartChat UI : plugin -->
 		<script src="js/smart-chat-ui/smart.chat.ui.min.js"></script>
 		<script src="js/smart-chat-ui/smart.chat.manager.min.js"></script>
+
+
 
 		<!-- Your GOOGLE ANALYTICS CODE Below -->
 		<script type="text/javascript">

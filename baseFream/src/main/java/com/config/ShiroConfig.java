@@ -39,6 +39,7 @@ public class ShiroConfig {
 		filterChainDefinitionMap.put("/php/**", "anon");
 		filterChainDefinitionMap.put("/sound/**", "anon");
 		filterChainDefinitionMap.put("/xml/**", "anon");
+		filterChainDefinitionMap.put("/common/**", "anon");
 		//filterChainDefinitionMap.put("/baseController/**", "anon");
 		//配置退出 过滤器,其中的具体的退出代码Shiro已经替我们实现了
 		filterChainDefinitionMap.put("/logout", "logout");
